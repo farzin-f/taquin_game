@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+                      "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+    <head>
+        <title>TP2 - Farzin Faridfar et Catherine Laprise</title>
+        <link rel="stylesheet" type="text/css" href="tp2.css"/>
+        <script type="text/javascript" src="http://code.jquery.com/jquery-latest.min.js"/>
+        <script type="text/javascript" src="tp2.js"/>
+    </head>
+    <body>
+        <div id="entete">
+            <div id = "score">
+                <br/>Nombre de déplacements: <span id="scoreVal"></span>
+            </div>
+            URL de l'image <input class="url" type="text" value="https://assets.vg247.com/current//2015/06/mass_effect_andromeda_e3_trailer_2.jpg" 
+                size="100" id="url"/><br/><br/>
+            <div>
+                Nombre de lignes <input type="text" value="4" size="4" id="nb_rows"/>  
+                Nombre de colonnes <input type="text" value="5" size="5" id="nb_cols"/>
+            </div>
+            <div class="num">
+                Afficher les numéros <input type="checkbox" checked="checked" id="affNum"/><br/><br/>
+            </div>
+            <button class="button" onclick="createPuzzle()">Afficher l'image</button>  
+            <button class="button" onclick="shufflePuzzle()">Mélanger les tuiles</button>
+        </div>
+
+        <div id="image">
+            
+        </div>
+    </body>
+</html>

@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+                      "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+    <head>
+        <title>IFT3225 - TP2</title>
+    </head>
+    <body>
+        <h1>IFT3225 - TP2</h1>
+        <h2>Auteurs: Farzin Faridfar et Catherine Laprise</h2>
+        <h3>Choix de présentation</h3>
+        <ul>
+            <li>Nous avons choisi de présenter l'image sous forme d'une table. Les cellules sont créées en fonction 
+            du nombre de colonnes/lignes précisées à l'aide de boucles <i>for</i> imbriquées. La fonction jQuery 
+            <i>append()</i> a été utilisée pour ajouter des lignes et cellules au tableau.</li>
+            <li>Le découpage de l'image a été fait en utilisant les propriétés CSS <i>background-image</i>, 
+            <i>background-size</i> et <i>background-position</i>. On commence par calculer la portion de l'image 
+            correspondant à l'aire de chaque cellule, puis on utilise jQuery pour ajouter cette portion aux
+            propriétés css de la cellule.</li>
+            <li>Pour déterminer l'ordre des cellules après le mélange, nous utilisons un <i>array</i>. Chaque index du <i>array</i>
+            correspond à la position de la cellule dans le tableau. La valeur à chaque index correspond à la portion de l'image
+            contenue dans la cellule à cet index. Ceci nous permet également de vérifier si le puzzle est complété, c'est-à-dire
+            si l'ordre des images dans le tableau est revenu à l'ordre initial.</li>
+            <li>Chaque déplacement consiste simplement à échanger les propriétés CSS des cellules concernées. Ainsi on 
+            évite d'avoir à recalculer la position de l'image à chaque itération.</li>
+        </ul>
+        <h3>Ce que nous avons appris durant ce travail</h3>
+        <ul>
+            <li>Nous avons surtout appris à utiliser les fonction de l'API jQuery. Grâce à ces fonctions, nous 
+            avons découvert que nous pouvions manipuler autant les balises HTML que les propriétés CSS du document.</li>
+            <li>Nous avons aussi approfondi notre connaisances des propriétés CSS, notamment celles reliées au 
+                <i>background</i>.</li>
+            <li>Un aspect qui nous a donné un peu de fil à retordre est que nous utilisons des propriétés numériques
+            (ex: id des cases) mais que jQuery récupère les attributs sous forme de string. Nous avons donc dû être 
+            très vigilants et s'assurer de bien convertir les différents types de données afin d'obtenir les résultats escomptés.</li>
+            <li>Un autre élément important de jQuery que nous avons découvert est la nécessité d'utiliser la méthode <i>on</i>
+            afin d'assigner la fonction de clic aux cases du tableau. Dans ce cas, il n'était pas possible d'assigner la fonction 
+            directement à chaque balise.</li>
+            
+        </ul>
+        <h3>Liens vers les documents utilisés</h3>
+        <ul>
+            <li>Fichier CSS: <a href="/~laprisca/IFT3225_TP2_200318844411/Jeu/tp2.css">tp2.css</a></li>
+            <li>Fichier JavaScript: <a href="/~laprisca/IFT3225_TP2_200318844411/Jeu/tp2.js">tp2.js</a></li>
+            <li>Fichier HTML: <a href="/~laprisca/IFT3225_TP2_200318844411/Jeu/tp2.xhtml">tp2.xhtml</a></li>
+        </ul>
+    </body>
+</html>
